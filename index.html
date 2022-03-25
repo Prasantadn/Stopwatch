@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: crimson;
+        }
+    h1 {
+        padding-top: 20vh;
+        padding-bottom: 2vh;
+        text-align: center;
+        font-size: 6vh;
+        text-decoration: underline;
+    }
+      button {
+        width: 100px;
+        height: 40px;
+        border: 3px soldi white;
+        border-radius: 12px;
+        background-color: blue ;
+        color: white;
+        cursor: pointer;
+        outline: none;
+      }
+
+      #stopwatch {
+        font-size: 100px;
+        position: absolute;
+        color: black;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+      }
+      #buttons {
+        position: absolute;
+        top: 55%;
+        left: 48.4%;
+        transform: translate(-51.6%, -45%);
+      }
+      #buttons li {
+        display: inline;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+      <h1><b>STOPWATCH</b></h1>
+
+    <div id="stopwatch">00:00:00</div>
+
+    <ul id="buttons">
+      <li><button onclick="starttimer()">START</button></li>
+      <li><button onclick="stoptimer()">STOP</button></li>
+
+      <li><button onclick="resettimer()">RESET</button></li>
+    </ul>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
